@@ -13,6 +13,11 @@ app.get('/cpu', (req, res) => {
   res.send(JSON.stringify(os.cpus(), null, 2))
 })
 
+app.get('/env', (req, res) => {
+  res.setHeader('Content-Type', 'application/json');
+  res.send(JSON.stringify(process.env, null, 2))
+
+
 app.listen(PORT, () => {
   console.log(`Listening on ${ PORT }`)
 })
