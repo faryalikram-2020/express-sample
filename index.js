@@ -4,7 +4,7 @@ const os = require('os')
 const PORT = process.env.PORT || 5000
 
 app.get('/', (req, res) => {
-  res.send('Hello World!!')
+  res.send('Hello World!')
 })
 
 
